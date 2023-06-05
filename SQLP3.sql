@@ -1,4 +1,4 @@
-CREATE DATABASE p3
+CREATE DATABASE testep3
 GO
 USE testep3
 GO
@@ -62,14 +62,14 @@ INSERT INTO avaliacao VALUES
 
 
 INSERT INTO disciplina VALUES
-('4203010', 'Arquitetura e OrganizaÁ„o de Computadores', 'AOC', 'T', 80),
-('4203020', 'Arquitetura e OrganizaÁ„o de Computadores', 'AOC', 'N', 80),
-('5005220', 'MÈtodos Para a ProduÁ„o do Conhecimento', 'MPPC', 'T', 80),
-('4208010', 'LaboratÛrio de Hardware', 'LABH', 'T', 80),
+('4203010', 'Arquitetura e Organiza√ß√£o de Computadores', 'AOC', 'T', 80),
+('4203020', 'Arquitetura e Organiza√ß√£o de Computadores', 'AOC', 'N', 80),
+('5005220', 'M√©todos Para a Produ√ß√£o do Conhecimento', 'MPPC', 'T', 80),
+('4208010', 'Laborat√≥rio de Hardware', 'LABH', 'T', 80),
 ('4226004', 'Banco de Dados', 'BD', 'T', 80),
 ('4213003', 'Sistemas Operacionais I', 'SOI', 'T', 80),
 ('4213013', 'Sistemas Operacionais I', 'SOI', 'N', 80),
-('4233005', 'LaboratÛrio de Banco de Dados', 'LBD', 'T', 80)
+('4233005', 'Laborat√≥rio de Banco de Dados', 'LBD', 'T', 80)
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 --SELECTS
@@ -271,7 +271,7 @@ BEGIN
 
     OPEN c
 
-    -- Inicializar vari·veis
+    -- Inicializar vari√°veis
     SET @data1 = (SELECT MIN(dt) FROM faltas f, disciplina d WHERE f.cod_disc = d.cod_disc AND d.sigla = @siglaF AND d.turno = @turnoF)
     SET @data2 = ''
     SET @data3 = ''
@@ -294,11 +294,11 @@ BEGIN
 	SET @data20 = ''
     SET @totalFaltas = 0
 
-    -- Loop atravÈs dos registros
+    -- Loop atrav√©s dos registros
     FETCH NEXT FROM c INTO @ra, @dt, @presenca
     WHILE @@FETCH_STATUS = 0
     BEGIN
-       -- Preencher os valores da presenÁa de cada data
+       -- Preencher os valores da presen√ßa de cada data
 	   IF(@data1 = @dt)
 		 BEGIN
 		      SET @presenca1 = @presenca
