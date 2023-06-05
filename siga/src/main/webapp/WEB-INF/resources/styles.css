@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: "Roboto", "Helvetica Neue", "Helvetica",  "Arial", sans-serif;
+}
+
+header {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background-color: rgb(50, 54, 57);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  margin-right: 32px;
+}
+
+header nav ul li {
+  margin-left: 32px;
+}
+
+header nav ul li:first-child {
+  margin-left: 0px;
+}
+
+header nav ul li a{
+	color: white;
+}
+
+
+section {
+	display: inline-block;
+	flex-direction: row;
+  	justify-content: center;
+  	align-items: center;
+}
+
+section div form{
+	margin-top: 24px;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+}
+input[type=submit]{
+	color: white;
+	background-color: #13884b;
+	padding: 12px 29px 12px 29px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	color: black;
+	background-color: #05cf79;
+	padding: 12px 29px 12px 29px;
+	transition: all 0.3s ease-in;
+}
+
+input{
+	border-bottom: 2px #13884b solid;
+	padding: 12px 20px;
+}
+
+
+h1 {
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	font-weight: 500;
+	color: #212121;
+}
+
+.table_notas th, td{
+	padding: 8px;
+}
+
+.table_notas th{
+	background-color: #0f0f0f;
+	color: white;
+}
+
+.table_notas td{
+	border-bottom: 1px solid #1f1f1f;
+}
+
+.table_notas tr:nth-child(even){
+	background-color: #e8fff4;
+}
+
+.table_notas{
+	border-collapse: collapse;
+	border: 2px solid #1f1f1f;
+	border-radius: 8px;
+}
+
+.btn {
+	font-size: 24px;
+	color: white;
+	background-color: #13884b;
+	padding: 12px 29px 12px 29px;
+	margin: 8px;
+	transition-delay: 0.1s;
+	cursor: pointer;
+}
+
+.btn:hover {
+	font-size: 24px;
+	color: black;
+	background-color: #05cf79;
+	padding: 12px 29px 12px 29px;
+	margin: 8px;
+	transition: all 0.3s ease-in;
+}
